@@ -1,0 +1,180 @@
+<<<<<<< HEAD
+// main: ../style.less
+.modal {
+  display: none;
+  width: 100%;
+  height: 100%;
+  padding: 0 1rem;
+  background-color: rgba(81, 85, 126, 0.9);
+  overflow: auto;
+
+  position: fixed;
+  top: 0;
+  left: 0;
+  z-index: 1000;
+
+  &.show {
+    display: flex;
+  }
+}
+
+.modal__dialog {
+  width: 100%;
+  max-width: 1200px;
+  margin: auto;
+  position: relative;
+  background-color: #fff;
+
+  transform: scale(0);
+  transition: transform .2s linear;
+
+  &--sm {
+    width: 100%;
+    max-width: 900px;
+  }
+}
+
+.modal__close {
+  width: 32px;
+  height: 32px;
+  padding: 0;
+  background: 0;
+  border: 0;
+  position: absolute;
+  top: 0.9rem;
+  right: 0.9rem;
+  z-index: 1;
+  cursor: pointer;
+
+  transition: transform .2s ease;
+
+  /* Поворот кнопки Х на 90градусов */
+  &:hover {
+    transform: rotate(90deg);
+  }
+
+  &:focus {
+    outline: 0;
+  }
+}
+
+.modal__content {
+  padding: 4.8rem 14.4rem;
+  text-align: center;
+}
+
+.modal__title {
+  margin-bottom: 3.6rem;
+  font-size: 3rem;
+  text-transform: uppercase;
+  color: @black;
+}
+=======
+// main: ../style.less
+.modal {
+  display: none;
+  width: 100%;
+  height: 100%;
+  padding: 0 1rem;
+  background-color: rgba(81, 85, 126, 0.9);
+  overflow: auto;
+
+  position: fixed;
+  top: 0;
+  left: 0;
+  z-index: 1000;
+
+  &.show {
+    display: flex;
+  }
+}
+
+.modal__dialog {
+  width: 100%;
+  max-width: 1200px;
+  margin: auto;
+  position: relative;
+  background-color: #fff;
+
+  transform: scale(0);
+  transition: transform .2s linear;
+
+  &--sm {
+    width: 100%;
+    max-width: 900px;
+  }
+}
+
+.modal__close {
+  width: 32px;
+  height: 32px;
+  padding: 0;
+  background: 0;
+  border: 0;
+  position: absolute;
+  top: 0.9rem;
+  right: 0.9rem;
+  z-index: 1;
+  cursor: pointer;
+
+  transition: transform .2s ease;
+
+  /* Поворот кнопки Х на 90градусов */
+  &:hover {
+    transform: rotate(90deg);
+  }
+
+  &:focus {
+    outline: 0;
+  }
+}
+
+.modal__content {
+  padding: 4.8rem 14.4rem;
+  text-align: center;
+}
+
+.modal__title {
+  margin-bottom: 3.6rem;
+  font-size: 3rem;
+  text-transform: uppercase;
+  color:@black;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+>>>>>>> bccc77c7be17a332e4f7e1a8f1712e134f782579

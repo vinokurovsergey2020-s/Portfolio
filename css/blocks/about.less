@@ -1,0 +1,184 @@
+// main: ../style.less
+
+.about {
+  width: 1088px;
+  margin-top: 8.4rem;
+  margin-bottom: 6.8rem;
+  margin-right: auto;
+  margin-left: auto;
+
+  @media @notebook {
+    width: 1024px;
+    margin-top: 4rem;
+    margin-bottom: 4rem;
+    margin-right: 0;
+    margin-left: 0;
+  }
+
+  @media @tablet {
+    width: 961px;
+  }
+
+  @media @mobile {
+    margin-bottom: 0;
+  }
+
+  @media @mobile-min {
+    margin-top: 3rem;
+    margin-bottom: 0;
+  }
+}
+
+.about__inner {
+  display: flex;
+  position: relative;
+
+  @media @mobile {
+    flex-wrap: wrap-reverse;
+  }
+}
+
+.about__photo,
+.about__content {
+  width: 50vw;
+}
+
+.about__photo {
+  position: relative;
+
+  @media @notebook {
+    width: 40%;
+  }
+
+  @media @mobile {
+    position: relative;
+    margin-top: 30px;
+    width: 100%;
+  }
+
+  img {
+    position: absolute;
+    bottom: 0;
+    z-index: 1;
+
+    @media @tablet {
+      bottom: 12%;
+    }
+
+    @media @mobile {
+      position: relative;
+      bottom: 0;
+    }
+
+    @media @mobile-sm {
+      width: 70vw;
+    }
+  }
+
+  &:before {
+    content: "";
+    width: 413px;
+    height: 413px;
+    background-color: #EFEFEF;
+    position: absolute;
+    left: 1rem;
+    bottom: 0;
+    z-index: 0;
+
+    @media @notebook {
+      width: 36vw;
+      height: 36vw;
+      bottom: 0;
+    }
+
+    @media @tablet {
+      bottom: 12%;
+    }
+
+    @media @mobile {
+      width: 100vw;
+      height: 65%;
+      left: -1rem;
+      bottom: 0;
+    }
+
+    @media @mobile-sm {
+      width: 100vw;
+      height: 50vw;
+    }
+  }
+}
+
+.about__content {
+  margin-top: 2rem;
+  margin-left: 3.2rem;
+
+  @media @tablet {
+    width: 44vw;
+    margin-top: 0;
+    margin-left: 3.2vw;
+  }
+
+  @media @mobile {
+    width: 100%;
+    max-width: 96vw;
+    margin-left: 0;
+    text-align: center;
+  }
+
+  @media @mobile-sm {
+    padding-right: .5rem;
+  }
+}
+
+.about__title {
+  font-size: 3rem;
+  font-weight: 700;
+  color: @black;
+  text-transform: uppercase;
+
+  @media @notebook {
+    font-size: 2.5rem;
+  }
+
+  @media @mobile-sm {
+    font-size: 6.6vw;
+  }
+}
+
+.about__bigtitle {
+  margin-bottom: 1.4rem;
+  position: relative;
+  left: -5px;
+  font-size: 6.13rem;
+  line-height: 1.1;
+  font-weight: 700;
+  color: fade(@black, 15%);
+  text-transform: uppercase;
+
+  @media @notebook {
+    font-size: 4rem;
+  }
+
+  @media @tablet {
+    font-size: 6vw;
+  }
+
+  @media @mobile-sm {
+    font-size: 10.8vw;
+  }
+}
+
+.about__text {
+  margin-bottom: 2.8rem;
+  font-size: 0.8rem;
+  color: @gray;
+  line-height: 1.6rem;
+  font-weight: 300;
+
+  @media @mobile-min {
+    margin-bottom: .5rem;
+    padding-right: 1rem;
+  }
+}
+
